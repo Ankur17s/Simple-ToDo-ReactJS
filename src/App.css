@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-container {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(63, 63, 70, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-head {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+.todo-head span {
+  color: #fff;
+  font-size: 4rem;
+  margin: 2rem;
+}
+
+.todo-input {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.todo-input input {
+  width: 30rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  text-indent: 2rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  background-color: #353333;
+  color: #fff;
+}
+
+.todo-add {
+  /* background-color: #fff; */
+  background-color: #353333;
+  height: 4rem;
+  width: 8rem;
+  border-radius: 2rem;
+  /* transition: 0.3s; */
+}
+.todo-input .todo-add button {
+  /* color: rgb(37, 9, 161); */
+  color: #f3e8e8;
+  margin-top: 0.4rem;
+  border: none;
+  background: transparent;
+  margin-left: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.list-container{
+  display: flex;
+justify-content: center;
+margin: 2rem;
+gap: .5rem;
+}
+.todo-notes{
+  width: 30rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  text-indent: 2rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  background-color: #353333;
+  color: #e7e2e2;
+  display: flex;
+  align-items: center;
+}
+
+.todo-delete{
+  background-color: #353333;
+  height: 4rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+.todo-delete button{
+  color: #f3e8e8;
+  margin-top: 0.4rem;
+  border: none;
+  background: transparent;
+  margin-left: 1.7rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+ .todo-remove{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ margin: 2rem;
 }
-
-.App-link {
-  color: #61dafb;
+.clear-todo{
+  background-color: #353333;
+  height: 4rem;
+  width: 38rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clear-todo button{
+  color: #f3e8e8;
+  /* margin-top: 0.4rem; */
+  border: none;
+  background: transparent;
+  /* margin-left: 1.7rem; */
+  font-size: 1.8rem;
+  font-weight: 400;
+  cursor: pointer;
 }
